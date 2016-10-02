@@ -4,6 +4,9 @@
 # vscode setting
 .vscode/
 
+# ionic hooks
+hooks/
+
 node_modules/
 www/build/
 platforms/
