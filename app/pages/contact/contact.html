@@ -1,17 +1,53 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<ion-header class="header">
+  <div class="center" (click)="presentModal()">
+    <div class="img-circle">
+    </div>
+    <div>登陆/注册</div>
+  </div>    
 </ion-header>
 
 <ion-content>
+  <ion-grid>    
+    <ion-row>
+      <ion-col width-33>
+        <button primary outline  class="buttonCircle">
+          <ion-icon name="md-star"></ion-icon>
+        </button>
+        <div class="labelCenter">我的关注</div>
+      </ion-col>
+      <ion-col width-33>
+        <button primary  outline  class="buttonCircle">
+          <ion-icon name="md-heart"></ion-icon>
+        </button>
+        <div class="labelCenter">我的收藏</div>
+      </ion-col>
+      <ion-col width-33>
+        <button primary outline  class="buttonCircle">
+          <ion-icon name="md-cog"></ion-icon>
+        </button>
+        <div class="labelCenter">设置</div>
+      </ion-col>
+    </ion-row>    
+  </ion-grid>
+  <!--<div class="footer">
+    <button ion-button full icon-left>
+      <ion-icon name="ios-happy-outline"></ion-icon>
+      Full Button
+    </button>
+  </div>-->
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-list-header></ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+      <ion-icon name="ios-happy-outline" item-left></ion-icon>
+      意见反馈
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>      
     </ion-item>
+    <ion-item>
+      <ion-icon name="md-person" item-left></ion-icon>
+      关于轻纺时尚
+      <ion-icon name="ios-arrow-forward" item-right></ion-icon>
+    </ion-item>    
   </ion-list>
 </ion-content>
+
